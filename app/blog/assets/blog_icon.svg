@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="blog_icon.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="6.475"
+     inkscape:cx="59.92278"
+     inkscape:cy="47.644788"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1"
+       style="fill:#5cd664"
+       inkscape:transform-center-x="-6.2269575"
+       inkscape:transform-center-y="-8.2042245"
+       d="M 46.429688,57.54367 34.11025,66.989909 22.027403,97.440763 41.353949,72.3343 a 3,3 0 0 1 0.133148,-3.451726 3,3 0 0 1 4.207195,-0.547279 3,3 0 0 1 0.547279,4.207195 3,3 0 0 1 -3.302793,1.011782 L 23.612228,98.660733 49.958494,79.189628 55.938635,64.8635 Z" />
+    <path
+       id="rect3"
+       style="fill:#5cd664;fill-opacity:1;stroke-width:0.90172"
+       d="M 17.369141 10.40625 C 13.511605 10.40625 10.40625 13.511605 10.40625 17.369141 L 10.40625 102.63086 C 10.40625 106.48841 13.511605 109.59375 17.369141 109.59375 L 102.63086 109.59375 C 106.48841 109.59375 109.59375 106.48841 109.59375 102.63086 L 109.59375 17.369141 C 109.59375 14.808264 108.20627 12.614727 106.1543 11.412109 L 103 15.646484 C 104.25146 16.441157 105.08594 17.822311 105.08594 19.421875 L 105.08594 100.57812 C 105.08594 103.07588 103.07588 105.08594 100.57812 105.08594 L 19.421875 105.08594 C 16.924119 105.08594 14.914063 103.07588 14.914062 100.57812 L 14.914062 19.421875 C 14.914062 16.924121 16.924119 14.914063 19.421875 14.914062 L 72.601562 14.914062 L 76.619141 10.40625 L 17.369141 10.40625 z " />
+    <path
+       id="path4"
+       style="fill:#5cd664"
+       inkscape:transform-center-x="1.3538377"
+       inkscape:transform-center-y="1.6216788"
+       d="M 86.625 5 L 49.035156 46.541016 L 47.251953 53.472656 L 59.986328 63.515625 L 65.943359 60.140625 L 106.27539 5 L 86.625 5 z " />
+  </g>
+</svg>

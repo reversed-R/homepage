@@ -1,0 +1,20 @@
+.linkwrapper {
+  /* background: #00ff80; */
+  /* background: #33ddbb; */
+  background: var(--ya-black);
+  color: var(--ya-green);
+  @media (prefers-color-scheme: dark) {
+    background: #0a7;
+    color: black;
+  }
+  margin: 0.2em;
+  font-size: 1em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  border-radius: 0.2em;
+}
+
+.linkwrapper:hover {
+  background: #2ac;
+  color: black;
+}

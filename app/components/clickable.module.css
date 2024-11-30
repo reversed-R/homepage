@@ -1,0 +1,28 @@
+.clicked {
+  background: var(--background);
+  border: 1px solid var(--foreground);
+  color: black;
+  margin: 1em;
+  padding: 0.75em;
+  border-radius: 1em;
+  text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.clicked:hover {
+  border: 1px solid var(--hover);
+}
+
+.notClicked {
+  background: #0a7;
+  color: black;
+  margin: 1em;
+  padding: 0.75em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.notClicked:hover {
+  background: var(--hover);
+}
