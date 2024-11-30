@@ -2,14 +2,12 @@ import fs from "fs";
 import path from "path";
 import Blog from "./blog";
 import { ArticleMetadata } from "./ArticleMetadata.ts";
+import process from "process";
 
-type Params = {
-  articles: ArticleMetadata[];
-  tagTexts: string[];
-};
-
-export const generateStaticParams = (): Params => {
-  const data = fs.readFileSync(path.join(__dirname, "articles/meta/meta.json"));
+export const generateStaticParams = () => {
+  const data = fs.readFileSync(
+    path.resolve(process.cwd(), "app/blog/articles/meta/meta.json"),
+  );
 
   return JSON.parse(data.toString());
 };

@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/blog/assets/icon.svg/route": "app/blog/assets/icon.svg/route.js",
+  "/icon.ico/route": "app/icon.ico/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/blog/articles/[slug]/page": "app/blog/articles/[slug]/page.js"
+}

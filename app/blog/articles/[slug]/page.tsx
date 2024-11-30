@@ -8,7 +8,9 @@ import { ArticleMetadata } from "../../ArticleMetadata.ts";
 import MetaHeader from "../../components/MetaHeader.tsx";
 
 export const generateStaticParams = async () => {
-  const articles = fs.readdirSync(path.resolve(__dirname, "../"));
+  const articles = fs.readdirSync(
+    path.resolve(process.cwd(), "app/blog/articles/"),
+  );
   console.log("articles", articles);
 
   return articles
@@ -20,7 +22,9 @@ export const generateStaticParams = async () => {
 
 const getMdData = (articleId: string): string => {
   const mdData = fs
-    .readFileSync(path.resolve(__dirname, "../", articleId, "index.md"))
+    .readFileSync(
+      path.resolve(process.cwd(), "app/blog/articles/", articleId, "index.md"),
+    )
     .toString();
 
   // console.log(mdData);
@@ -28,7 +32,9 @@ const getMdData = (articleId: string): string => {
 };
 
 const getMetaData = (articleId: string): ArticleMetadata | undefined => {
-  const data = fs.readFileSync(path.join(__dirname, "../meta/meta.json"));
+  const data = fs.readFileSync(
+    path.join(process.cwd(), "app/blog/articles/meta/meta.json"),
+  );
   const articles: ArticleMetadata[] = JSON.parse(data.toString()).articles;
 
   const metaData = articles.find((article) => article.id === articleId);
