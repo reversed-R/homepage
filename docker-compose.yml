@@ -1,0 +1,20 @@
+services:
+  https-portal:
+    image: steveltn/https-portal:1
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - web
+    restart: always
+    environment:
+      DOMAINS: "reversed-r.dev -> http://web:3000"
+      STAGE: "production" # Don't use production until staging works
+      # DOMAINS: "localhost -> http://web:3000"
+      # STAGE: "local"
+      # FORCE_RENEW: 'true'
+
+  web:
+    build: .
+    ports:
+      - "3000:3000"
