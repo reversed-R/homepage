@@ -5,7 +5,7 @@ type Props = {
   mdData: string;
 };
 
-export default function ArticleBlock(props: Props) {
+export default function Viewer(props: Props) {
   return (
     <div className={styles.viewer}>
       <ReactMarkdown>{props.mdData}</ReactMarkdown>
