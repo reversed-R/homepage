@@ -1,26 +1,8 @@
 services:
-  https-portal:
-    image: steveltn/https-portal:1
-    ports:
-      - "80:80"
-      - "443:443"
-    links:
-      - web
-    restart: always
-    environment:
-      DOMAINS: "reversed-r.dev -> http://web:3000"
-        # DOMAINS: "reversed-r.dev -> http://host.docker.internal:8000"
-      STAGE: "production" # Don't use production until staging works
-      # DOMAINS: "localhost -> http://web:3000"
-      # STAGE: "local"
-      # FORCE_RENEW: 'true'
-    volumes:
-      - https-portal-data:/var/lib/https-portal
-
   web:
     build: .
-    ports:
-      - "8000:3000"
+    labels:
+      - "traefik.http.routers.web.rule=Host(`reversed-r.dev`)"
   #    ports:
   #    - "8000:3000"
   #web:
@@ -29,9 +11,15 @@ services:
   #    - "8000:80"
   #  networks:
   #    - net
+  traefik:
+    image: traefik:2.0
+    ports:
+      - 8000:8080 # webUI
+      - 80:80
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./config/traefik/traefik.yml:/etc/traefik/traefik.yml
 
-volumes:
-  https-portal-data:
 
 #networks:
 #  net:
