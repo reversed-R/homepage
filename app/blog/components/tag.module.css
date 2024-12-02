@@ -1,0 +1,15 @@
+.tag {
+  background: var(--ya-green);
+  color: black;
+  margin: 0.2em;
+  font-size: 1em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  border-radius: 0.2em;
+  display: inline-block;
+}
+
+.tag:hover {
+  background: #2ac;
+  color: black;
+}

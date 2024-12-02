@@ -1,0 +1,22 @@
+# Providers config
+providers:
+  docker: {} # Docker との連携を有効
+
+# API/Dashboard config
+api:
+  insecure: true # WebUI にアクセスできるように設定
+
+entryPoints:
+  web:
+    address: ":80"
+
+  web-secure:
+    address: ":443"
+
+certificatesResolvers:
+  sample:
+    acme:
+      email: webmaster@myserver.test
+      storage: acme.json
+      httpChallenge:
+        entryPoint: web

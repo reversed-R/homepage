@@ -1,0 +1,17 @@
+.thumbnail {
+  width: 60vw;
+  @media (width < 768px) {
+    width: 70vw;
+  }
+  background: var(--ya-black);
+  color: var(--ya-green);
+  margin: 1em;
+  padding: 0.75em;
+  border-radius: 1em;
+  /* text-align: center; */
+  transition: 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}

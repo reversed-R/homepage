@@ -1,0 +1,81 @@
+.viewer {
+  width: 60vw;
+  @media (width < 768px) {
+    width: 70vw;
+  }
+  background: whitesmoke;
+  color: black;
+  margin: 1em;
+  padding: 2em;
+  border-radius: 1em;
+
+  overflow-wrap: break-word;
+}
+
+.viewer h1 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.viewer h2 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.viewer h3 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.viewer h4 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.viewer h5 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.viewer h6 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.viewer code {
+  display: inline-block;
+  background: silver;
+  padding: 0.2em;
+  border-radius: 0.3em;
+}
+.viewer pre {
+  background: var(--ya-dark);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  overflow: hidden;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+.viewer > pre > code {
+  display: inline-block;
+  overflow-wrap: break-all;
+  background: var(--ya-dark);
+
+  color: white;
+}
+/**/
+/* .viewer code { */
+/*   background: var(--ya-dark); */
+/*   color: white; */
+/*   padding: 0.2em; */
+/*   border-radius: 0.3em; */
+/* } */
+
+.viewer a {
+  color: var(--ya-darker-green);
+}
+
+.viewer a:hover {
+  /* color: var(--hover); */
+  color: skyblue;
+}
