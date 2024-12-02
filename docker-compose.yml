@@ -9,12 +9,30 @@ services:
     restart: always
     environment:
       DOMAINS: "reversed-r.dev -> http://web:3000"
+        # DOMAINS: "reversed-r.dev -> http://host.docker.internal:8000"
       STAGE: "production" # Don't use production until staging works
       # DOMAINS: "localhost -> http://web:3000"
       # STAGE: "local"
       # FORCE_RENEW: 'true'
+    volumes:
+      - https-portal-data:/var/lib/https-portal
 
   web:
     build: .
     ports:
-      - "3000:3000"
+      - "8000:3000"
+  #    ports:
+  #    - "8000:3000"
+  #web:
+  #  image: nginx
+  #  ports:
+  #    - "8000:80"
+  #  networks:
+  #    - net
+
+volumes:
+  https-portal-data:
+
+#networks:
+#  net:
+#    driver: bridge
