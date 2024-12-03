@@ -322,7 +322,7 @@ CMD ["node", "server.js"]
 
 特にSSL証明書周りどうするの、Apacheをリバースプロキシ？とかにしてサーバ内のNextサーバにリダイレクトか？
 などと考えていたところ（もっと本番環境での運用を先に考えろという話はある）、
-[powerfulfamily.net](https://powerfulfamily.net)であるところの[間瀬bb](https://x.com/mase_bb)が現れ、
+[powerfulfamily.net](https://powerfulfamily.net)であるところの[間瀬bb](https://x.com/bb_mase)が現れ、
 [https-portal](https://github.com/SteveLTN/https-portal)が簡単で良いとのことだったのでやってみました。
 
 https-portalは、`docker-compose.yml`に適当に設定を書いてやるだけで、
@@ -413,5 +413,5 @@ certificatesResolvers:
 [ベア君](https://x.com/bear_wash9663)にもめちゃくちゃ催促されていますし、
 ここらで公開しましょう。
 
-明日は欠番ですが、明後日は他大学生にしてcoinsを騙っているというbrsyweさんの記事です。
+明日は欠番ですが、明後日は他大学生にしてcoinsを騙っているという[brsywe](https://x.com/brsywe)さんの記事です。
 楽しみですね〜。
