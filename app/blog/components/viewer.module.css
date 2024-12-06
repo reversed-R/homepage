@@ -1,8 +1,6 @@
 .viewer {
+  display: block;
   width: 60vw;
-  @media (width < 768px) {
-    width: 70vw;
-  }
   background: whitesmoke;
   color: black;
   margin: 1em;
@@ -10,6 +8,11 @@
   border-radius: 1em;
 
   overflow-wrap: break-word;
+  @media (width < 768px) {
+    width: auto;
+    margin: 0;
+    padding: 0.75em;
+  }
 }
 
 .viewer h1 {
@@ -43,8 +46,11 @@
 }
 
 .viewer code {
-  display: inline-block;
-  background: silver;
+  @media (768px <= width) {
+    display: inline-block;
+  }
+  background: #ddd;
+  overflow-wrap: break-all;
   padding: 0.2em;
   border-radius: 0.3em;
 }
@@ -52,7 +58,7 @@
   background: var(--ya-dark);
   padding: 0.5em;
   border-radius: 0.5em;
-  overflow: hidden;
+  overflow: scroll;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
@@ -78,4 +84,14 @@
 .viewer a:hover {
   /* color: var(--hover); */
   color: skyblue;
+}
+
+.viewer blockquote {
+  /* border: 1px solid var(--ya-green); */
+  padding: 0.25em;
+  border-left: 0.6em solid var(--ya-green);
+  border-radius: 0.4em;
+  background: #ddd;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
