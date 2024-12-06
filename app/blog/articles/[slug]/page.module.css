@@ -34,21 +34,28 @@
   justify-items: center;
   min-height: 100svh;
   padding: 80px;
-  @media (width < 768px) {
-    position: relative;
-    top: 40vh;
-    padding: 1em;
-  }
   gap: 1em;
   font-family: var(--font-geist-sans);
+  @media (width < 768px) {
+    display: block;
+    position: relative;
+    top: 40vh;
+    padding: 0.75em;
+  }
 }
 
 .central {
+  display: block;
   /* display: flex; */
   /* flex-direction: column; */
   /* grid-row-start: 2; */
   /* color: #0a7; */
   /* color: #1b8; */
+  @media (width < 768px) {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5em;
+  }
 }
 
 .menubar {
