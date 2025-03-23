@@ -14,13 +14,11 @@ services:
   traefik:
     image: traefik:2.0
     ports:
-      - 8000:8080 # webUI
+      - 8080:8080 # webUI
       - 80:80
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./config/traefik/traefik.yml:/etc/traefik/traefik.yml
-
-
 #networks:
 #  net:
 #    driver: bridge
