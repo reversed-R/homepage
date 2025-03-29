@@ -17,10 +17,8 @@ services:
       # traefik.http.middlewares.redirectall.redirectregex.regex: .*
       # traefik.http.middlewares.redirectall.redirectregex.replacement: https://reversed-r.dev
     networks:
-      - default
       - traefik
 networks:
-  default:
   traefik:
     name: traefik
     external: true
