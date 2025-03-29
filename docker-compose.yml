@@ -2,23 +2,16 @@ services:
   web:
     build: .
     labels:
-      - "traefik.http.routers.web.rule=Host(`reversed-r.dev`)"
-  #    ports:
-  #    - "8000:3000"
-  #web:
-  #  image: nginx
-  #  ports:
-  #    - "8000:80"
-  #  networks:
-  #    - net
+      - traefik.enable: true
+      - traefik.docker.network: shared
+      - traefik.http.routers.web.entrypoints: web # Port 80
+      - traefik.http.routers.web.rule: Host(`reversed-r.dev`)
+      - traefik.http.routers.web.tls=true
+      - traefik.http.routers.web.tls.certResolver=letsencrypt
+    networks:
+      - default
+      - traefik
+networks:
+  default:
   traefik:
-    image: traefik:2.0
-    ports:
-      - 8080:8080 # webUI
-      - 80:80
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ./config/traefik/traefik.yml:/etc/traefik/traefik.yml
-#networks:
-#  net:
-#    driver: bridge
+    external: true
