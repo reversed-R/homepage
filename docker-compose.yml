@@ -4,7 +4,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: traefik
-      # traefik.http.routers.web.entrypoints: web # Port 80
+      traefik.http.routers.web.entrypoints: https
       traefik.http.routers.web.service: web
       traefik.http.services.web.loadbalancer.server.port: 3000
       traefik.http.routers.web.rule: Host(`reversed-r.dev`)
