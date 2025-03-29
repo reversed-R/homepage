@@ -1,12 +1,12 @@
 services:
   web:
     build: .
-    ports:
-      - 10080:3000
     labels:
       traefik.enable: true
       traefik.docker.network: shared
       # traefik.http.routers.web.entrypoints: web # Port 80
+      traefik.http.routers.web.service: web
+      traefik.http.services.web.loadbalancer.server.port: 3000
       traefik.http.routers.web.rule: Host(`reversed-r.dev`)
       traefik.http.routers.web.tls: true
       traefik.http.routers.web.tls.certResolver: letsencrypt
